@@ -28,7 +28,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '', element: <Layout />, children: [
-        { path: 'home', element: <Navigate to={'home'} /> },
+        { path: 'FreshCart', element: <Navigate to={'home'} /> },
         { path: 'register', element: <AuthProtectedRoute>  <Register /> </AuthProtectedRoute> },
         { path: 'login', element: <AuthProtectedRoute>  <Login /> </AuthProtectedRoute> },
         { path: 'forgot-password', element: <AuthProtectedRoute>  <ForgotPassword/> </AuthProtectedRoute> },
