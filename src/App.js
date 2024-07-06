@@ -29,7 +29,6 @@ function App() {
     {
       path: '', element: <Layout />, children: [
         { path: 'FreshCart', element: <Navigate to={'home'} /> },
-        { path: 'FreshCart', element: <ProtectedRoute> <Login /> </ProtectedRoute> },
         { path: 'register', element: <AuthProtectedRoute>  <Register /> </AuthProtectedRoute> },
         { path: 'login', element: <AuthProtectedRoute>  <Login /> </AuthProtectedRoute> },
         { path: 'forgot-password', element: <AuthProtectedRoute>  <ForgotPassword/> </AuthProtectedRoute> },
@@ -37,7 +36,7 @@ function App() {
         { path: 'update-password', element: <AuthProtectedRoute>  <ResetPassword/> </AuthProtectedRoute> },
 
 
-        { path: 'home/:home', element: <ProtectedRoute> <Home /> </ProtectedRoute> },
+        { path: 'FreshCart/:home', element: <ProtectedRoute> <Home /> </ProtectedRoute> },
         { path: 'products', element: <ProtectedRoute>  <Products /> </ProtectedRoute> },
         { path: 'cart', element: <ProtectedRoute> <Cart /> </ProtectedRoute> },
         { path: 'categories', element: <ProtectedRoute> <Categories /> </ProtectedRoute> },
