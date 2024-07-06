@@ -29,6 +29,7 @@ function App() {
     {
       path: '', element: <Layout />, children: [
         { path: 'FreshCart', element: <Navigate to={'home'} /> },
+        { path: 'FreshCart', element: <ProtectedRoute> <Login /> </ProtectedRoute> },
         { path: 'register', element: <AuthProtectedRoute>  <Register /> </AuthProtectedRoute> },
         { path: 'login', element: <AuthProtectedRoute>  <Login /> </AuthProtectedRoute> },
         { path: 'forgot-password', element: <AuthProtectedRoute>  <ForgotPassword/> </AuthProtectedRoute> },
